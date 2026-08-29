@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { apiService } from '../services/api';
-import { Users, AlertOctagon, CheckCircle, HelpCircle, Navigation } from 'lucide-react';
+import { Users, Navigation } from 'lucide-react';
 
 export default function CommunityDashboard() {
   const [regions, setRegions] = useState([]);
