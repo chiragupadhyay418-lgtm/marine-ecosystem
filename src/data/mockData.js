@@ -34,7 +34,9 @@ export const mockRegions = [
       distance_km: 18,
       suitability: "HIGH",
       confidence: 85, // %
-      depth_m: 45
+      depth_m: 45,
+      lat: 13.1500,
+      lon: 80.4300
     },
     explainability: [
       { factor: "Cyclone Proximity", weight: 90, raw_value: "140km offshore" },
@@ -80,7 +82,9 @@ export const mockRegions = [
       distance_km: 24,
       suitability: "MEDIUM",
       confidence: 70,
-      depth_m: 35
+      depth_m: 35,
+      lat: 11.8200,
+      lon: 79.9500
     },
     explainability: [
       { factor: "Wave Height", weight: 65, raw_value: "2.1m" },
@@ -125,7 +129,9 @@ export const mockRegions = [
       distance_km: 12,
       suitability: "HIGH",
       confidence: 90,
-      depth_m: 28
+      depth_m: 28,
+      lat: 8.0200,
+      lon: 77.6500
     },
     explainability: [
       { factor: "Wave Height", weight: 20, raw_value: "0.9m" },
@@ -169,6 +175,31 @@ export const mockAlerts = [
     lon: 79.75,
     timestamp: "1 hour ago",
     explanation: "Wind gusts up to 35 km/h expected nearshore. Small motorized crafts should exercise caution."
+  }
+];
+
+export const mockRestrictedZones = [
+  {
+    id: "restricted-1",
+    name: "Ennore Port Naval Defense Corridor",
+    reason: "Strict Defense Security Zone & Deep Channel Shipping Corridor. Commercial trawling prohibited.",
+    coordinates: [
+      [13.2200, 80.3000],
+      [13.2600, 80.3400],
+      [13.2300, 80.3900],
+      [13.1900, 80.3400]
+    ]
+  },
+  {
+    id: "restricted-2",
+    name: "Marine Ecological Sanctuary Reserve",
+    reason: "Protected Coral & Turtle Nesting Habitat. Motorized fishing and bottom trawling strictly banned.",
+    coordinates: [
+      [8.1200, 77.5800],
+      [8.1600, 77.6300],
+      [8.1100, 77.6700],
+      [8.0700, 77.6100]
+    ]
   }
 ];
 

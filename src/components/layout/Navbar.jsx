@@ -11,7 +11,7 @@ export default function Navbar() {
       {/* Brand Logo and Title */}
       <div className="flex items-center gap-3">
         <div className="bg-blue-600 p-2 rounded-lg text-white shadow-md shadow-blue-500/20">
-          <Waves className="h-6 width-6" />
+          <Waves className="h-6 w-6" />
         </div>
         <div>
           <div className="flex items-center gap-2">
